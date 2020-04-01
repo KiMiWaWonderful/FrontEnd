@@ -1,0 +1,20 @@
+ {
+    "location": {
+      "latitude": 40.7838351,
+      "longitude": -74.6143763
+    },
+   "locations": [
+     {
+       "latitude": 40.7838351,
+       "longitude": -74.6143763
+     },
+     {
+       "latitude": 40.8838351,
+       "longitude": -74.7143763
+     },
+     {
+       "latitude": 40.9838351,
+       "longitude": -74.8143763
+     }
+   ]
+  }
