@@ -36,7 +36,7 @@
           />
         </el-form-item>
       </el-tooltip>
-      <el-button type="text">没有登录?去注册</el-button>
+      <el-button type="text" @click="toRegister">没有登录?去注册</el-button>
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
     </el-form>
 
@@ -105,6 +105,9 @@
         const { key } = e
         this.capsTooltip = key && key.length === 1 && (key >= 'A' && key <= 'Z')
       },
+      toRegister(){
+        this.$router.push("/register")
+      },
       handleLogin() {
         this.$refs.loginForm.validate(valid => {
           if (valid) {
@@ -122,9 +125,10 @@
             //   }
             // })
             let config = {
-              url: 'http://localhost:8080/login?username='+this.loginForm.username+'&password='+this.loginForm.password,
+              url: 'http://47.115.13.115/login?username='+this.loginForm.username+'&password='+this.loginForm.password,
               method: 'post',
-              withCredentials: true
+              withCredentials: true,
+              // changeOrigin: true    // 是否跨域
             }
 
             axios(config)

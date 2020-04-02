@@ -113,12 +113,12 @@
             }
 
             let config = {
-              url: 'http://localhost:8080/register',
+              url: 'http://47.115.13.115/register',
               method: 'post',
               data: JSON.stringify(newUser),
               timout: 10000,
               headers:{
-                "Content-Type":"application/json; charset=UTF-8"
+                "Content-Type":"application/json;charset=UTF-8"
               }
             }
 

@@ -330,7 +330,7 @@
         this.path.push(this.test)
         console.log(this.path)
         let config = {
-              url: 'http://localhost:8080/check?'+'lat='+this.test.lat+"&lng="+this.test.lng,
+              url: 'http://47.115.13.115:8080/check?'+'lat='+this.test.lat+"&lng="+this.test.lng,
               method: 'get',
               withCredentials: true
             }
@@ -442,7 +442,7 @@
           return false
         }
 
-        const wsuri = 'ws://localhost:8080/websocket/location'
+        const wsuri = 'ws://47.115.13.115:8080/websocket/location'
         this.websocket = new WebSocket(wsuri)
 
         this.websocket.onopen = this.websocketonopen
@@ -507,7 +507,7 @@
       //从后台获取中心坐标点
       getCenterFromBack() {
         let config = {
-          url: 'http://localhost:8080/ws/sendCenter',
+          url: 'http://47.115.13.115:8080/ws/sendCenter',
           method: 'get',
         }
 
@@ -526,7 +526,7 @@
       },
       getPath() {
         let config = {
-          url: 'http://localhost:8080/ws/sendLocationData',
+          url: 'http://47.115.13.115:8080/ws/sendLocationData',
           method: 'get',
         }
         axios(config)

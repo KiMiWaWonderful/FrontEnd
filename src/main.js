@@ -26,9 +26,10 @@ Vue.use(BaiduMap, {
 Vue.config.productionTip = false
 
 Vue.prototype.$http = axios.create({
-  // baseURL: 'http://localhost:3001/api'
-  baseURL: 'http://localhost:8080/',
-  withCredentials: true
+  baseURL: 'http://47.115.13.115/',
+  // baseURL: 'http://47.115.13.115:8080/',
+  withCredentials: true,
+  // changeOrigin: true    // 是否跨域
 })
 
 Vue.prototype.$msg = function msg(type, message, onClose) {
