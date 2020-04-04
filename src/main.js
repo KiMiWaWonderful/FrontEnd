@@ -28,8 +28,7 @@ Vue.config.productionTip = false
 Vue.prototype.$http = axios.create({
   baseURL: 'http://47.115.13.115/',
   // baseURL: 'http://47.115.13.115:8080/',
-  withCredentials: true,
-  // changeOrigin: true    // 是否跨域
+  // withCredentials: true,
 })
 
 Vue.prototype.$msg = function msg(type, message, onClose) {

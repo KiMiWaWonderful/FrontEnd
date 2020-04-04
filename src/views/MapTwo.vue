@@ -507,8 +507,9 @@
       //从后台获取中心坐标点
       getCenterFromBack() {
         let config = {
-          url: 'http://47.115.13.115:8080/ws/sendCenter',
+          url: 'http://47.115.13.115/ws/sendCenter',
           method: 'get',
+          withCredentials: true
         }
 
         axios(config)
@@ -526,10 +527,14 @@
       },
       getPath() {
         let config = {
-          url: 'http://47.115.13.115:8080/ws/sendLocationData',
+          url: 'http://47.115.13.115/ws/sendLocationData',
           method: 'get',
+          withCredentials: true
         }
         axios(config)
+          .then((response) => {
+              console.log('sendLocationData')
+          })
       }
 
     },

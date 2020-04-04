@@ -127,8 +127,7 @@
             let config = {
               url: 'http://47.115.13.115/login?username='+this.loginForm.username+'&password='+this.loginForm.password,
               method: 'post',
-              withCredentials: true,
-              // changeOrigin: true    // 是否跨域
+              // withCredentials: true
             }
 
             axios(config)
