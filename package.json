@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "axios-jsonp": "^1.0.4",
     "bmaplib.distancetool": "^1.0.2",
     "cors": "^2.8.5",
