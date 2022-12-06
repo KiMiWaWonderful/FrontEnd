@@ -18,7 +18,7 @@
     "json-server": "^0.15.1",
     "mongoose": "^5.9.1",
     "mongoose-geojson-schema": "^2.1.5",
-    "qs": "^6.9.1",
+    "qs": "^6.9.7",
     "socket.io": "^2.3.0",
     "vue": "^2.6.10",
     "vue-amap": "^0.5.10",
