@@ -14,7 +14,7 @@
     "bmaplib.distancetool": "^1.0.2",
     "cors": "^2.8.5",
     "element-ui": "^2.4.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "json-server": "^0.15.1",
     "mongoose": "^5.9.1",
     "mongoose-geojson-schema": "^2.1.5",
