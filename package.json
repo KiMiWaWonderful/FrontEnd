@@ -27,7 +27,7 @@
     "vue-video-player": "^5.0.2"
   },
   "devDependencies": {
-    "@vue/cli-service": "^4.1.0",
+    "@vue/cli-service": "^5.0.8",
     "node-sass": "^4.13.1",
     "sass-loader": "^7.3.1",
     "vue-cli-plugin-element": "^1.0.1",
